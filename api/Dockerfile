@@ -5,4 +5,4 @@ ADD requirements.txt .
 
 RUN pip install -r requirements.txt
 
-CMD gunicorn flask_api:app -b 127.0.0.1:5000    
+CMD gunicorn flask_api:app -b 0.0.0.0:5000

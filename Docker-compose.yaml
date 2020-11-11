@@ -3,15 +3,12 @@ version: '3'
 services: 
     app:
         build: ./app
-        container_name: 
+        container_name: 'app'
 
-    api:
+    api:    
         build: ./api
-        container_name: 'apis'
-        tty: ture
-        volume:
+        container_name: 'api'
+        volumes:
             - ./app:/python/src
-
-    DB:
-        build: ./DB
-        
+        ports:
+            - "5000:5000"
