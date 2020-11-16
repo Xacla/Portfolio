@@ -12,3 +12,14 @@ services:
             - ./app:/python/src
         ports:
             - "5000:5000"
+
+
+    web_server:
+        build: ./web_server
+        container_name: 'web_server'
+        volumes:
+            - ./web_server/html/source:/usr/share/nginx/html
+        tty: true
+        stdin_open: true
+        ports: 
+            - "8080:80"    
