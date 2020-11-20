@@ -10,9 +10,6 @@ def index():
 def hoge_get_data():
     return request.get_data()
 
-@app.route('/login',methods = ['GET','POST'])
-def login():
-    return 'log in'
 
 if __name__ == "__main__":
     app.run(debug = True,host='0.0.0.0',port=5000)

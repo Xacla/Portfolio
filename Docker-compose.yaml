@@ -4,6 +4,12 @@ services:
     app:
         build: ./app
         container_name: 'app'
+        volumes: 
+            - ./app:/usr/src/
+        tty: true
+        stdin_open: true
+        ports:
+            - "8080:8080        "
 
     api:    
         build: ./api
@@ -19,7 +25,5 @@ services:
         container_name: 'web_server'
         volumes:
             - ./web_server/html/source:/usr/share/nginx/html
-        tty: true
-        stdin_open: true
         ports: 
-            - "8080:80"    
+            - "8000:80"   
