@@ -31,4 +31,5 @@ Flaskの勉強
 
 Dockerの勉強
 
+nginxの勉強
 GCPサービスの勉強
