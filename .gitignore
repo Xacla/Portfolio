@@ -1,2 +1,4 @@
+.gitignore
 /test_portfolio
 /Users/owner/Desktop/portforio_app/app/app/app/config/firebase-config.js
+app/app/node_modules
